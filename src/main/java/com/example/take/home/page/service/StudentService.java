@@ -13,7 +13,6 @@ import com.example.take.home.page.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import lombok.AllArgsConstructor;
-import lombok.var;
 
 @Service
 @AllArgsConstructor
