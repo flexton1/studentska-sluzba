@@ -54,9 +54,9 @@ public class AuthService {
 
         String token = generateVerificationToken(user);
         mailService.sendMail(new NotificationEmail("Molimo Vas aktivirajte Vaš račun",
-                user.getEmail(), "Molimo Vas" +
-                "kliknite na link da bi aktivirali račun : " + "<a>" +
-                "http://localhost:8080/api/auth/accountVerification/'>" + token + "</a>"));
+                user.getEmail(), "Molimo Vas " +
+                "kliknite na link da bi aktivirali račun : " +
+                "http://localhost:8080/api/auth/accountVerification/" + token));
     }
 
     @Transactional(readOnly = true)
